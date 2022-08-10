@@ -8,19 +8,59 @@
         <link rel="shortcut icon" href="" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
-        
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/styles.css">
 
         <title>Responsive real state website - Bedimcode</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo"> RealSimo <i class='bx bx-home'></i></a>
+
+                <div class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-home-alt-2'></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-building-house'></i>
+                                <span>Residences</span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-award'></i>
+                                <span>Value</span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-phone'></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="" class="button nav_button">
+                    Subscribe
+                </a>
+            </nav>
+
+
             
         </header>
 
@@ -28,7 +68,44 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                <div class="home_container container grid">
+                    <div class="home_data">
+                        <h1 class="home_title">
+                            Discover <br> Most Suitable <br> Property
+                        </h1>
+                        <p class="home_description">
+                            Find a variety of properties that suit you very easily,
+                            forget all difficulties in finding a residence for you
+                        </p>
+                        <form action="" class="home_search">
+                            <i class='bx bxs-map'></i>
+                            <input type="text" class="home_search_input" placeholder="Search by location ...">
+
+                            <button class="button">Search</button>
+                        </form>
+
+                        <div class="home_value">
+                            <div>
+                                <h1 class="home_value_number">
+                                    9K <span>+</span>
+                                </h1>
+                                <span class="home_value_description">Premium <br> Product</span>
+                            </div>
+                            <div>
+                                <h1 class="home_value_number">
+                                    2K <span>+</span>
+                                </h1>
+                                <span class="home_value_description">Happy <br> Customer</span>
+                            </div>
+                            <div>
+                                <h1 class="home_value_number">
+                                    28K <span>+</span>
+                                </h1>
+                                <span class="home_value_description">Awards <br> Winning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== LOGOS ====================-->
@@ -67,12 +144,12 @@
 
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="js/scrollreveal.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="js/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
