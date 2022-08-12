@@ -96,12 +96,16 @@ const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark':'light';
-
-const getCurrentIcon= () => document.body.classList.contains(iconTheme) ? 'bx bx-moon':'bx bx-sun'
+const getCurrentIcon= () => themeButton.classList.contains(iconTheme) ? 'bx-sun':'bx-moon'
 
 if (selectedTheme){
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'] (darkTheme)
-themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add':'remove'](iconTheme)
+
+    if (document.body.classList.contains(darkTheme)){
+    themeButton.classList.add('bx-sun')
+    themeButton.classList.add('bx-moon')
+
+}
 }
 
 
@@ -113,4 +117,31 @@ localStorage.setItem('selected-theme', getCurrentTheme())
 localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+
+
+
+
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration:2500,
+    delay:400,
+    reset:true
+
+})
+
+sr.reveal('.home_title, .popular_container, .subscribe_container, .footer_container')
+sr.reveal('.home_description, .footer_info', {delay:500})
+sr.reveal('.home_search', {delay:600})
+sr.reveal('.home_value', {delay:700})
+sr.reveal('.home_images', {delay:800, origin:'bottom'})
+sr.reveal('.logos_img',{interval:100})
+sr.reveal('.value_images, .contact_content',{origin:'left'})
+sr.reveal('.value_content, .contact_images',{origin:'right'})
+
+
+
