@@ -6,4 +6,7 @@ It a Responsive Real State Website
 
 #### Light Theme
 
-![alt text](https://github.com/mrkasri/responsive-real-state-website/blob/master/preview/1.png?raw=true)
+<p align="center">
+  <img src="img/1.png" width="350" title="hover text">
+  <img src="img/3.png" width="350" alt="accessibility text">
+</p>
