@@ -1277,7 +1277,7 @@ box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
   }
 
   .contact_card_box{
-    padding: 28px 1.5rem 1.5rem;
+    padding: 20px .5rem 1rem;
   }
 
   .subscribe_container{
@@ -1334,7 +1334,8 @@ box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
   .container{
     margin: 0 auto;
   }
-  
+
+
 }
 
 
